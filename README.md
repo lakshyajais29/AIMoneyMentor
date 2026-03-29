@@ -205,5 +205,3 @@ Free tier: 15 requests/minute, 1 million tokens/day — more than enough.
 - No user data or PDFs are stored anywhere
 
 ---
-
-## Built With ❤️ for ET AI Hackathon 2026
