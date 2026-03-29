@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \":*)",
+      "Bash(npm --version)",
+      "Bash(pip install:*)",
+      "Bash(pip index:*)",
+      "Bash(python -c \"from routers.fire_router import router; print\\(''fire_router import OK''\\)\")",
+      "Bash(python -c \"from routers.tax_router import router; print\\(''tax_router import OK''\\)\")",
+      "Bash(python -c \"from routers.xray_router import router; print\\(''xray_router import OK''\\)\")",
+      "Bash(python -c \"import main; print\\(''main import OK''\\)\")",
+      "Bash(python -c \"from llm.gemini import call_gemini; print\\(''gemini import OK''\\)\")",
+      "Bash(npm install:*)",
+      "Bash(cd:*)",
+      "Bash(npx tsc:*)",
+      "Bash(python:*)",
+      "Bash(find 'C:\\\\Users\\\\LAKSHYA JAISWAL\\\\ai-money-mentor' -type d -not -path */node_modules* -not -path */.next*)"
+    ]
+  }
+}
