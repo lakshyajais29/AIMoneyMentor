@@ -154,48 +154,6 @@ section_80ccd=50000
 tds_deducted=280000
 ```
 
----
-
-## Deployment
-
-### Backend → Render
-
-1. Push `backend/` folder to a GitHub repo
-2. Go to [render.com](https://render.com) → New Web Service
-3. Connect your repo, set root to `backend/`
-4. Build command: `pip install -r requirements.txt`
-5. Start command: `uvicorn main:app --host 0.0.0.0 --port $PORT`
-6. Add environment variable: `GEMINI_API_KEY = your_key`
-7. After deploy, copy the Render URL (e.g. `https://ai-money-mentor.onrender.com`)
-
-### Frontend → Vercel
-
-1. Push `frontend/` to GitHub
-2. Go to [vercel.com](https://vercel.com) → New Project → import your repo
-3. Set root directory to `frontend/`
-4. Add environment variable: `NEXT_PUBLIC_API_URL = https://ai-money-mentor.onrender.com`
-5. Deploy
-
-### After Both Are Deployed
-
-Update `ALLOWED_ORIGINS` in your Render environment variables:
-```
-ALLOWED_ORIGINS=https://your-app.vercel.app
-```
-
----
-
-## Get Your Free Gemini API Key
-
-1. Go to [aistudio.google.com/app/apikey](https://aistudio.google.com/app/apikey)
-2. Sign in with Google
-3. Click "Create API Key"
-4. Copy and paste into your `.env` file
-
-Free tier: 15 requests/minute, 1 million tokens/day — more than enough.
-
----
-
 ## Financial Disclaimers
 
 - This tool is for **educational purposes only**
